@@ -1,0 +1,11 @@
+Pseudocode for mario.c
+
+prompt user for height of pyramid
+
+only allow positive integers between 1 and 8 inclusive
+
+print number given by user with #'s in the form of a left leaning pyramid with it being (user input) lines high
+
+switch code to a right leaning pyramid with "." then hashes. accending and decending in opposition
+
+then switch to pyramid with no ".". istead just have spaces
