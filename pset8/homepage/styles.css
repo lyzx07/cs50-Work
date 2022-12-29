@@ -1,0 +1,450 @@
+/*css for button links for all pages*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.btn-group-links .link-btn {
+  float: left;
+  background-color: blue;
+  opacity: 0.2;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-top: 50px;
+}
+
+.btn-group-links .link-btn:hover {
+  opacity: 1;
+}
+
+/*css for index page*/
+#index-body, #index-html {
+  height: 100%;
+  margin: 0;
+}
+
+#index-html, #index-body {
+  background: #000000 url("moon-galaxy.jpg") no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.87;
+}
+
+#btn-group {
+    font-family: italic;
+    text-align: center;
+}
+
+#name {
+  text-align: center;
+  color: black;
+  margin-top: 35px;
+  text-shadow: 2px 2px 7px white;
+}
+
+#name:hover {
+  color: blue;
+}
+
+#interests {
+  color: white;
+  background-color: #2f3030;
+  text-align: center;
+}
+
+#about-me {
+  color: #e6edec;
+  width: 30%;
+  font-family: italic;
+  border-style: inset;
+  border-color: white black white black;
+  background-color: #1f2121;
+  margin-top: 175px;
+  margin-left: 6px;
+  padding: 10px;
+}
+
+#span-index {
+  color: #10dceb;
+}
+
+#index-link-btn, #cats-link-button {
+  background-image: linear-gradient(0deg, black, #524f4a);
+  border: 3px solid #8d8f82;
+}
+
+/* css for music page*/
+#music-body, #music-html {
+  height: 100%;
+  margin: 0;
+}
+
+#header {
+  text-align: center;
+  font-size: 80px;
+  font-family: lucida handwriting;
+  color: #04035e;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  border: 3px solid blue;
+  margin: 15px;
+}
+
+#images1, #images2 {
+  height: 300px;
+  width: 400px;
+}
+
+#music-link-btn {
+  background-image: linear-gradient(0deg, #911004, #943f06);
+  border: 3px solid #eb9809;
+}
+
+#music-body {
+  background-color: #943f03;
+}
+
+#link-intro {
+  color: black;
+  text-align: center;
+  height: 50px;
+  font-size: 35px;
+}
+
+#ptx-list-item, #artists-list-item {
+  list-style-type: none;
+}
+
+#lists {
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  font-size: 20px;
+  color: #97f007;
+}
+
+/* css for cats page*/
+#cats-html, #cats-body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: #000000 url("cat-shadow-moon.jpg") no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header-cats {
+  font-size: 120px;
+  margin-left: 150px;
+  color: #4a0202;
+}
+
+.photo-flex img {
+  width: 90%;
+  height: 275px;
+  padding: 10px;
+  border: 5px solid white;
+}
+
+#photo1, #photo3 {
+  align-self: flex-end;
+}
+
+.images-flex-cont {
+  display: flex;
+  margin-top: 75px;
+  justify-content: center;
+  height: 350px;
+}
+
+#fun-facts {
+  border-style: inset;
+  border-color: white red white red;
+  width: 45%;
+  color: #b2c2b3;
+  background-color: black;
+}
+
+#h1-cats {
+  text-decoration: underline;
+  color: #c71006;
+}
+
+
+
+/* css for cs50 page*/
+#cs50-header {
+  text-align: center;
+  font-size: 70px;
+}
+
+.edX-logo {
+  width: 70px;
+  height: 40px;
+}
+
+.flex-container1-cs50 {
+  display: flex;
+  height: 200px;
+  background-color: blue;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.span-cs50 {
+  color: #abab0c;
+}
+
+#span-harvard {
+  color: black;
+}
+
+#cs50-pic1, #cs50-pic2, #cs50-pic3, #cs50-pic4 {
+  width: 200px;
+  height: 150px;
+}
+
+#cs50-pic1:hover, #cs50-pic3:hover {
+  -ms-transform: scale(2.5); /* IE 9 */
+  -webkit-transform: scale(2.5); /* Safari 3-8 */
+  transform: scale(2.5);
+  margin-left: 100px;
+  transition: transform .5s;
+}
+
+#cs50-pic2:hover, #cs50-pic4:hover {
+  -ms-transform: scale(2.5); /* IE 9 */
+  -webkit-transform: scale(2.5); /* Safari 3-8 */
+  transform: scale(2.5);
+  margin-right: 100px;
+  transition: transform .5s;
+}
+
+#cs50-flex-p1, #cs50-flex-p2 {
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+  width: 400px;
+}
+
+.flex-container2-cs50 {
+  display: flex;
+  height: 200px;
+  background-color: blue;
+  margin-top: 100px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#cs50-link-btn {
+  background-image: linear-gradient(0deg, #010a3b, white);
+  border: 3px solid #01041a;
+}
+
+/* buttons css */
+#buttons-body {
+  background-color: #e8f584;
+  width: 100%;
+}
+
+.buttons-header {
+  font-size: 70px;
+  text-align: center;
+  color: #064709;
+}
+
+.grid-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: white;
+  padding: 10px;
+  grid-gap: 12px;
+}
+
+.grid-item {
+  background-color: #4d2a02;
+  padding: 55px;
+  font-size: 25px;
+  text-align: center;
+}
+
+#button-1, #button-3, #button-5 {
+  background-color: #48e2f0;
+}
+
+#button-6 {
+  grid-column: span 2;
+}
+
+#button-1 {
+  grid-row: span 2;
+}
+
+#p-message-button6 {
+  visibility: hidden;
+  font-size: 130px;
+  color: black;
+  text-align: center;
+  margin-left: 170px;
+}
+
+#button1, #button2, #button3, #button4, #button5 {
+  border-radius: 50%;
+}
+
+#button6:hover {
+  box-shadow: 0 12px 16px 0 rgba(255,0,0,0.8);
+  background-color: yellow;
+}
+
+#buttons-link-btn {
+  background-image: linear-gradient(0deg, #48a5db, #f5ae4c);
+  border: 3px solid #402704;
+}
+
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto 0 auto 0;
+  }
+
+  .grid-item {
+    padding: 32px;
+  }
+
+  #p-message-button6 {
+    visibility: hidden;
+    font-size: 100px;
+    color: black;
+    text-align: center;
+    margin-left: 200px;
+  }
+
+  .btn-group-links {
+    margin-left: 45px;
+  }
+
+  #buttons-btn {
+    margin-left: 90px;
+  }
+
+  #cs50-pic1, #cs50-pic2, #cs50-pic3, #cs50-pic4 {
+    width: 100px;
+    height: 50px;
+  }
+
+  #cs50-flex-p1, #cs50-flex-p2 {
+    width: 100px;
+    font-size: 9px;
+  }
+
+  #cs50-pic2:hover, #cs50-pic4:hover {
+    -ms-transform: scale(2.5); /* IE 9 */
+    -webkit-transform: scale(2.5); /* Safari 3-8 */
+    transform: scale(2.5);
+    margin-right: 50px;
+    transition: transform .5s;
+  }
+
+  #cs50-pic1:hover, #cs50-pic3:hover {
+    -ms-transform: scale(2.5); /* IE 9 */
+    -webkit-transform: scale(2.5); /* Safari 3-8 */
+    transform: scale(2.5);
+    margin-left: 70px;
+    transition: transform .5s;
+  }
+
+  #cats-html, #cats-body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: #000000 url("cat-shadow-moon-crop.jpg") no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #fun-facts {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  #header-cats {
+    text-align: center;
+    margin-left: 0;
+    font-size: 90px;
+  }
+
+  .photo-flex img {
+    width: 175px;
+    height: auto;
+    padding: 10px;
+    border: 3px solid white;
+  }
+
+  .images-flex-cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+    height: 350px;
+  }
+
+  #images1, #images2 {
+    height: 150px;
+    width: 200px;
+  }
+
+  #lists {
+    margin-top: 50px;
+  }
+
+  #about-me {
+    width: 100%;
+    margin-top: 300px;
+    padding: 7px;
+  }
+
+  #name {
+    color: blue;
+  }
+}
+
+@media screen and (max-width: 300px) {
+
+  #buttons-btn {
+    margin-left: 0px;
+  }
+
+  #link-intro {
+    margin-bottom: 100px;
+  }
+
+  .grid-container {
+    display: inline-grid;
+  }
+}
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en" id="buttons-html">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <link href="styles.css" rel="stylesheet" />
+    <title>My Webpage</title>
+    <meta name="viewport" content="width=device-width" />
+    <script>
+      function functionOne() {
+        var change = document.getElementById("button-1");
+        var butChange = document.getElementById("button1");
+        butChange.style.display = "none";
+        change.style.background =
+          "url('rubber-duckie-small-resizing.jpg')no-repeat center";
+      }
+
+      function functionTwo() {
+        var change = document.getElementById("button2");
+        var changeP = document.getElementById("button2-p");
+        var change2 = document.getElementById("button-2");
+        var bgChange = document.getElementById("buttons-body");
+        change.innerHTML = "I love buttons";
+        changeP.innerHTML = "Don't you?";
+        change2.style.color = "#555";
+        change2.style.backgroundColor = "#042101";
+        bgChange.style.backgroundColor = "blue";
+      }
+
+      function functionThree() {
+        var change = document.getElementById("button3");
+        var but3Change = document.getElementById("button-3");
+        var bgChange = document.getElementById("buttons-body");
+        var but1Change = document.getElementById("button-1");
+        var but2Change = document.getElementById("button-2");
+        var but4Change = document.getElementById("button-4");
+        var but5Change = document.getElementById("button-5");
+        var but6Change = document.getElementById("button-6");
+        var butHeader = document.getElementById("buttonsHeader");
+        butHeader.style.color = "#999";
+        but1Change.style.backgroundColor = "#888";
+        but2Change.style.backgroundColor = "#999";
+        but4Change.style.backgroundColor = "#444";
+        but5Change.style.backgroundColor = "#111";
+        but6Change.style.backgroundColor = "#777";
+        change.innerHTML = "grayscale";
+        but3Change.style.backgroundColor = "#555";
+        bgChange.style.backgroundColor = "#222";
+        change.style.color = "#333";
+      }
+
+      function functionFour() {
+        var change = document.getElementById("button4");
+        var change2 = document.getElementById("button-4");
+        change2.style.backgroundColor = "#400101";
+        change.innerHTML = "Nice!";
+        change.style.color = "#555";
+      }
+
+      function functionFive() {
+        var but1Change = document.getElementById("button-1");
+        var but2Change = document.getElementById("button-2");
+        var but3Change = document.getElementById("button-3");
+        var but4Change = document.getElementById("button-4");
+        var but5Change = document.getElementById("button-5");
+        var but6Change = document.getElementById("button-6");
+        var bgChange = document.getElementById("buttons-body");
+        var change = document.getElementById("button5");
+        change.innerHTML = "rainbow";
+        but1Change.style.backgroundColor = "red";
+        but2Change.style.backgroundColor = "#CC5500";
+        but3Change.style.backgroundColor = "yellow";
+        but4Change.style.backgroundColor = "green";
+        but5Change.style.backgroundColor = "blue";
+        but6Change.style.backgroundColor = "purple";
+        bgChange.style.backgroundColor = "black";
+      }
+
+      function functionSix() {
+        var change = document.getElementById("grid-cont");
+        var bgChange = document.getElementById("buttons-body");
+        var pMessage = document.getElementById("p-message-button6");
+        var butHeader = document.getElementById("buttonsHeader");
+        var contChange = document.getElementById("buttons-link-btn");
+        butHeader.style.display = "none";
+        contChange.style.backgroundImage = "none";
+        contChange.style.border = "none";
+        contChange.style.marginLeft = "150px";
+        pMessage.style.visibility = "visible";
+        pMessage.innerHTML = "I TOLD YOU NOT TO CLICK!!!";
+        bgChange.style.background = "url('hazard-thumbnail.png') red repeat-y";
+        change.style.display = "none";
+      }
+    </script>
+  </head>
+  <body id="buttons-body">
+    <h1 class="buttons-header" id="buttonsHeader">BUTTONS!!!</h1>
+    <div class="grid-container" id="grid-cont">
+      <div class="grid-item" id="button-1">
+        <button onclick="functionOne()" id="button1" type="button">
+          Click Me!
+        </button>
+      </div>
+      <div class="grid-item" id="button-2">
+        <button onclick="functionTwo()" id="button2" type="button">
+          No me!
+        </button>
+        <p id="button2-p"></p>
+      </div>
+      <div class="grid-item" id="button-3">
+        <button onclick="functionThree()" id="button3" type="button">
+          My turn
+        </button>
+      </div>
+      <div class="grid-item" id="button-4">
+        <button onclick="functionFour()" id="button4" type="button">
+          I'm next
+        </button>
+      </div>
+      <div class="grid-item" id="button-5">
+        <button onclick="functionFive()" id="button5" type="button">
+          Me me me
+        </button>
+      </div>
+      <div class="grid-item" id="button-6">
+        <button onclick="functionSix()" id="button6" type="button">
+          DON'T CLICK!
+        </button>
+      </div>
+    </div>
+    <p id="p-message-button6"></p>
+    <nav class="container" id="buttons-link-btn">
+      <footer class="btn-group-links">
+        <button onclick="document.location='index.html'" class="link-btn">
+          Home
+        </button>
+        <button onclick="document.location='music.html'" class="link-btn">
+          Music
+        </button>
+        <button onclick="document.location='cats.html'" class="link-btn">
+          Cats
+        </button>
+        <button onclick="document.location='cs50.html'" class="link-btn">
+          CS50 Progress
+        </button>
+        <button
+          id="buttons-btn"
+          onclick="document.location='buttons.html'"
+          class="link-btn"
+        >
+          BUTTONS!!
+        </button>
+      </footer>
+    </nav>
+  </body>
+</html>
