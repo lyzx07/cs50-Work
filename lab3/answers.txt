@@ -1,0 +1,13 @@
+sort1 uses: bubble sort
+
+How do you know?: when using the sorted .txt files, this was much faster than the others. since this was already sorted, it would take just one time through 'n'.
+
+sort2 uses: merge sort
+
+How do you know?: when using the random .txt files this method was much faster than 1 and 3. with random numbers we have found that the merge method works more 
+efficiently using (n log n)
+
+sort3 uses: selection sort
+
+How do you know?: when using this method with the presorted .txt files we found that this method took much longer than method 1 leading us to believe that this 
+method is using the selection sort algorithim. 
