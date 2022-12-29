@@ -1,0 +1,3 @@
+first entry:
+Today i have been having issues grasping the concept of working with files.
+but doing this little project has helped a little. this might help the process go smoother for me with this current problem "recover"
