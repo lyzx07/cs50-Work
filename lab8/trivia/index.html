@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <h3>What does 'The sexiest man alive, 2021' call Thor's hammer?</h3>
+
+                <button class="incorrect">Billy</button>
+                <button class="incorrect" >Martha</button>
+                <button class="correct" onclick="functionOne()">Jonathan</button>
+                <button class="incorrect">Loki</button>
+
+                <p id="feedback1"></p>
+            </div>
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <h3>What is Agent Coulson's first name?</h3>
+                <input type="text" id="text">
+                <button id="check" class="make-it-bigger" onclick="functionTwo()">Check Answer</button>
+
+                <p id="feedback2"></p>
+
+            </div>
+        </div>
+        <script>
+        function functionOne(){
+            var correct = document.querySelector(".correct");
+            document.querySelector('#feedback1').innerHTML = 'Correct!';
+            correct.style.backgroundColor='green';
+        }
+
+        let incorrects = document.querySelectorAll('.incorrect');
+        for (let i = 0; i < incorrects.length; i++){
+            incorrects[i].addEventListener('click', function()
+            {
+                incorrects[i].style.backgroundColor = 'red';
+                document.querySelector('#feedback1').innerHTML = 'Incorrect';
+            });
+        }
+
+        function functionTwo(){
+            var check = document.getElementById("text");
+            if ((check.value=="Phil") || (check.value=="Philip") || (check.value=="phil") || (check.value=="philip"))
+            {
+                document.querySelector('#feedback2').innerHTML='Correct!';
+                check.style.backgroundColor='green';
+            }
+            else
+            {
+                document.querySelector('#feedback2').innerHTML='Incorrect';
+                check.style.backgroundColor='red';
+            }
+        }
+        </script>
+    </body>
+</html>
