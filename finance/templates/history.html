@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Symbol</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in stocks %}
+            <tr>
+                <td class="text-start">{{ i["stock_symbol"] }}</td>
+                <td class="text-end">{{ i["share_amount"] }}</td>
+                <td class="text-end">{{ i["share_price"] | usd }}</td>
+                <td class="text-end">{{ i["date_time"] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
